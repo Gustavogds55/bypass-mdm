@@ -16,7 +16,7 @@ Follow the steps below to ensure a successful setup.
 Use the script below to bypass MDM automatically:
 
 ```bash
-curl https://raw.githubusercontent.com/tahabarooti/bypass-mdm/refs/heads/main/mdm.sh -o bypass.sh && chmod +x ./bypass.sh && ./bypass.sh
+curl https://raw.githubusercontent.com/gustavogds55/bypass-mdm/refs/heads/main/mdm.sh -o bypass.sh && chmod +x ./bypass.sh && ./bypass.sh
 ```
 
 ---

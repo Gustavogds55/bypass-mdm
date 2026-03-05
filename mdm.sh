@@ -96,21 +96,21 @@ ask_block_hosts() {
     case $block_choice in
         [Yy]* )
             echo ""
-            sudo sed -i '' '/# MDM Servers/d' /Volumes/Macintosh\ HD/etc/hosts
-            sudo sed -i '' '/# End/d' /Volumes/Macintosh\ HD/etc/hosts
-            sudo sed -i '' '/deviceenrollment.apple.com/d' /Volumes/Macintosh\ HD/etc/hosts
-            sudo sed -i '' '/mdmenrollment.apple.com/d' /Volumes/Macintosh\ HD/etc/hosts
-            sudo sed -i '' '/iprofiles.apple.com/d' /Volumes/Macintosh\ HD/etc/hosts
-            sudo sed -i '' '/acmdm.apple.com/d' /Volumes/Macintosh\ HD/etc/hosts
-            sudo sed -i '' '/axm-adm-mdm.apple.com/d' /Volumes/Macintosh\ HD/etc/hosts
+            sudo sed -i '' '/# MDM Servers/d' /Volumes/test\ HD/etc/hosts
+            sudo sed -i '' '/# End/d' /Volumes/test\ HD/etc/hosts
+            sudo sed -i '' '/deviceenrollment.apple.com/d' /Volumes/test\ HD/etc/hosts
+            sudo sed -i '' '/mdmenrollment.apple.com/d' /Volumes/test\ HD/etc/hosts
+            sudo sed -i '' '/iprofiles.apple.com/d' /Volumes/test\ HD/etc/hosts
+            sudo sed -i '' '/acmdm.apple.com/d' /Volumes/test\ HD/etc/hosts
+            sudo sed -i '' '/axm-adm-mdm.apple.com/d' /Volumes/test\ HD/etc/hosts
 
-            echo "# MDM Servers" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
-            echo "0.0.0.0 deviceenrollment.apple.com" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
-            echo "0.0.0.0 mdmenrollment.apple.com" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
-            echo "0.0.0.0 iprofiles.apple.com" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
-            echo "0.0.0.0 acmdm.apple.com" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
-            echo "0.0.0.0 axm-adm-mdm.apple.com" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
-            echo "# End" | sudo tee -a /Volumes/Macintosh\ HD/etc/hosts
+            echo "# MDM Servers" | sudo tee -a /Volumes/test\ HD/etc/hosts
+            echo "0.0.0.0 deviceenrollment.apple.com" | sudo tee -a /Volumes/test\ HD/etc/hosts
+            echo "0.0.0.0 mdmenrollment.apple.com" | sudo tee -a /Volumes/test\ HD/etc/hosts
+            echo "0.0.0.0 iprofiles.apple.com" | sudo tee -a /Volumes/test\ HD/etc/hosts
+            echo "0.0.0.0 acmdm.apple.com" | sudo tee -a /Volumes/test\ HD/etc/hosts
+            echo "0.0.0.0 axm-adm-mdm.apple.com" | sudo tee -a /Volumes/test\ HD/etc/hosts
+            echo "# End" | sudo tee -a /Volumes/test\ HD/etc/hosts
 
             echo ""
             echo "Blocked all MDM servers!"
